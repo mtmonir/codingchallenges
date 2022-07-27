@@ -7,4 +7,11 @@ function additionofdigits(number){
     return sum;
 }
 
-console.log(additionofdigits(45));
+function oddishOrEvenish(number){
+    let sum = additionofdigits(number)
+    return sum%2==0?"Evenish":"Oddish";
+}
+
+
+console.log("The number 45 is "+oddishOrEvenish(45));
+console.log("The number 48 is "+oddishOrEvenish(48));
